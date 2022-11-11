@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+long fat(int a) {
+    if(a < 2)
+        return 1;
+    else
+        return a * fat(a-1);   
+    }
+
+int main()
+{
+    double x, b = 0.0;
+    int a, c, y;
+    printf("Informe int : \a");
+    scanf("%d", &a);
+    printf("Informe double : \a");
+    scanf("%lf", &x);
+    for(c = 0; c < a; c++ )
+    {
+        b = b + ( ( pow(-1.0 , c)*pow(x, (2.0*c)) ) / (fat(2*c)) ); 
+
+    }
+        printf("\a\acos(x) = %lf\a", b );
+    return 0;
+}
