@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    float n1, n2, sum, sub, mult, div;
+
+    printf("Digite o primeiro numero: " );
+    scanf("%f", &n1);
+
+    printf("Digite o segundo numero: " );
+    scanf("%f", &n2);
+
+    //Soma
+    sum = n1 + n2;
+
+    //Subtração
+    sub = n1 - n2;
+
+    //Multiplicaçao
+    mult = n1* n2;
+
+    //Divisão
+    div = n1/n2;
+
+    printf("%.2f + %.2f = %.2f\n", n1, n2, sum);
+    printf("%.2f - %.2f = %.2f\n", n1, n2, sub);
+    printf("%.2f * %.2f = %.2f\n", n1, n2, mult);
+    printf("%.2f / %.2f = %.2f\n", n1, n2, div);
+}
