@@ -1,0 +1,17 @@
+#include <stdlib.h>
+#include <stdio.h>
+int main(int argc, char** argv) {
+  
+  int num1, num2, i;
+    printf(" Digite o 1 numero ");
+    scanf("%d",&num1);
+    printf(" Digite o 2 numero ");
+    scanf("%d",&num2);
+  
+  for (i=num1; i<=num2; i++) {
+        if ((i%2)!=0) {   
+            printf("%i, ",i);
+        }
+   }
+    return 0;
+}
