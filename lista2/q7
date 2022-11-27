@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int n,k,j,primo,num;
+        printf ("Entre com o numero:");
+        scanf ("%d",&num);
+        if (num<=1)
+        return main();
+        num=num;
+        j=num;
+        menor:
+        for(n=num; n<=num*num; n++){
+        primo=0;
+        for(k=1; k<=n; k++)
+        if((n%k)==0)
+        primo++;
+        if(primo>2||n==j){
+        num=num-1;
+        goto menor;
+        }
+        else{
+        printf("%d\n", n);
+        break;
+        }
+    }
+}
